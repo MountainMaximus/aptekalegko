@@ -1,0 +1,36 @@
+.post {
+  margin: 40px 0;
+  width: 100%;
+  &__wrapper {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid $secondary;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    &:hover {
+      border-color: $primary;
+    }
+  }
+  &__content {
+    width: calc(100% - 55px);
+    &__title {
+      font-weight: 700;
+      font-size: 1.6rem;
+      text-align: start;
+    }
+    &__text {
+      font-size: 1.4rem;
+    }
+  }
+  &__menu {
+    width: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__favorite {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

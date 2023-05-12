@@ -1,0 +1,39 @@
+.search__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  position: relative;
+}
+.search {
+  position: relative;
+  width: 250px;
+  display: block;
+  &__input {
+    cursor: pointer;
+    border: 1px solid $secondary;
+    padding: 5px;
+    padding-right: 30px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    &:focus,
+    :hover {
+      border: 1px solid $primary;
+    }
+  }
+  &__clear {
+    width: 18px;
+    height: 18px;
+    opacity: 0.3;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

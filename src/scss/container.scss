@@ -1,0 +1,36 @@
+.page {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__container {
+    width: 1320px;
+    height: 100%;
+
+    @include breakpoint($laptop-bp) {
+      width: 960px;
+    }
+    @include breakpoint($tablet-bp) {
+      width: 740px;
+    }
+    @include breakpoint($tablet-mini-bp) {
+      width: 540px;
+    }
+    @include breakpoint($mobile-bp) {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    margin: $header-height 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
