@@ -1,0 +1,38 @@
+.skeleton {
+  &__wrapper {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid $secondary;
+    border-radius: 5px;
+    cursor: progress;
+  }
+  &__block {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 0;
+    color: transparent;
+    background-size: 300% 100%;
+    background-image: linear-gradient(
+      to right,
+      #adbfbc,
+      #6f757a,
+      #adbfbc,
+      #6f757a
+    );
+    animation: k-background 2s ease-in-out infinite;
+    &-sm {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+}
+@keyframes k-background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 90% 0;
+  }
+}

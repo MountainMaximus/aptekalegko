@@ -1,7 +1,7 @@
 import React from "react";
 export const FavoriteIcon: React.FC<{
   opacity?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }> = ({ opacity, onClick }) => {
   return (
     <svg
@@ -11,7 +11,7 @@ export const FavoriteIcon: React.FC<{
       xmlns="http://www.w3.org/2000/svg"
       onClick={(e) => {
         e.stopPropagation();
-        onClick();
+        onClick?.();
       }}
     >
       <path
